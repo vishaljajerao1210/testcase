@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-controller="editctrl">
+{{title}}
+<form ng-submit="editstudent()">
+name:<input type="text" id="ipCity" class="form-control"
+				ng-model="y.name"/>
+				branch:<input type="text" id="ipCity" class="form-control" ng-model="y.branch"/>
+				address:<input type="text" id="ipCity" class="form-control" ng-model="y.address"/>
+				<button class="btn btn-primary" type="submit">add</button>
+</form>
+
+</body>
+</html>

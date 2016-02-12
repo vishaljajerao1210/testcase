@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-controller="customerctrl">
+<table class="table table-condensed">
+<thead>
+<tr>
+<td>name</td>
+<td>author</td>
+<td>title</td>
+<td>isbn</td>
+<td>nop</td>
+<td>view</td>
+
+</tr>
+<tr ng-repeat="c in book">
+<td>{{c.name}}</td>
+<td>{{c.author}}</td>
+<td>{{c.title}}</td>
+<td>{{c.isbn}}</td>
+<td>{{c.nop}}</td>
+<td><a href="#view1/{{c.id}}">view</a></td>
+
+</table>
+
+</body>
+</html>
